@@ -6,7 +6,7 @@ function App() {
 
   return (
    <h1>
-    hello word
+    hello react
    </h1>
   )
 }
