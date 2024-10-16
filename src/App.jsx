@@ -1,14 +1,15 @@
-
-import './App.css'
+import { useState } from "react";
+import Form from "./components/Form";
 
 function App() {
-
+  const [todos, setTodos] = useState(["ทำงาน", "ซักผ้า"]);
 
   return (
-   <h1>
-    hello react
-   </h1>
-  )
+    <>
+      <Form setTodos={setTodos} />
+      {todos.toString()}
+    </>
+  );
 }
 
-export default App
+export default App;
